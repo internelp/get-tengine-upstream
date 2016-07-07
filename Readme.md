@@ -1,16 +1,16 @@
 #获取nginx的upstream状态
-本工具可以配合zabbix监控Tengine的Upstream状态。
+	本工具可以配合zabbix监控Tengine的Upstream状态。
 
-格式为exe index [upstream|name|status|rise|fall|type|port]
-根据指定的命令行参数获取内容
+	格式为exe index [upstream|name|status|rise|fall|type|port]
+	根据指定的命令行参数获取内容
 - 第一个参数必须为数字
 - 第二个参数为不区分大小写的文本
 - 第三个以及以后的参数会丢弃
 
 ##使用方法
-二进制文件名				服务器序号	需要查询的内容
-get-gengine-upstream	1 			status
-根据下面内容，会返回index号为1的status状态，输出结果为“1”（up=1，down=0）。
+	二进制文件名				服务器序号	需要查询的内容
+	get-gengine-upstream	1 			status
+	根据下面内容，会返回index号为1的status状态，输出结果为“1”（up=1，down=0）。
 ```json
 {"servers": {
   "total": 3,
@@ -24,9 +24,8 @@ get-gengine-upstream	1 			status
 ```
 
 ##Nginx监控url配置
-需要在编译后的目录内放置url.conf文本文件。
-目前只能一行，写http地址。
-也不能有空白行。
+	需要在编译后的目录内放置url.conf文本文件。
+	目前只能一行，写http地址。
 
 
 ##二进制文件
