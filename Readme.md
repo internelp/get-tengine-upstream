@@ -27,10 +27,11 @@
 	需要在编译后的目录内放置url.conf文本文件。
 	目前只能一行，写http地址。
 目录结构为
-	.
-	├── get-tengine-upstream
-	└── url.conf
-
+```
+.
+├── get-tengine-upstream
+└── url.conf
+```
 ##二进制文件
 已经包含了编译后的linux64和Windows64版本。
 - get-tengine-upstream
