@@ -1,8 +1,6 @@
 #获取nginx的upstream状态
 本工具可以配合zabbix监控Tengine的Upstream状态。
-__
-|upstream|name|status|rise|fall|type|port|
-__
+
 格式为exe index [upstream|name|status|rise|fall|type|port]
 根据指定的命令行参数获取内容
 - 第一个参数必须为数字
